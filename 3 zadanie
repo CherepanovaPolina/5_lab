@@ -1,0 +1,16 @@
+
+if __name__ == '__main__':
+    per = str(input())
+    spi = []
+    spi.append([str(s.lower()) for s in per.split()])
+    dict = {}
+    li, lj = len(spi), len(spi[0])
+    for i in range(li):
+        for j in range(lj):
+            p = spi[i][j]
+            if p in dict:
+                dict[p] += 1
+            else:
+                dict[p] = 1
+    for key, value in dict.items():
+        print(key, value)
