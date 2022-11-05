@@ -1,0 +1,13 @@
+
+if __name__ == '__main__':
+    print('Введите матрицу: \n')
+    M = []
+    while True:
+        s = input()
+        if s == 'end':
+            break
+        else:
+            M.append(list(map(int, s.split())))
+    i = 0
+    for i in range(len(M)):
+        print(min(M[i]))
