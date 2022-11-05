@@ -1,0 +1,9 @@
+
+if __name__ == '__main__':
+        stroka = str(input('Введите строку: '))
+        stroka = stroka.lower()
+        stroka = stroka.replace(' ','')
+        if stroka == stroka[::-1]:
+            print('Да')
+        else:
+            print('Нет')
